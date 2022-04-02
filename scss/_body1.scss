@@ -1,0 +1,73 @@
+.body1 {
+    background-image: url("../imagenes/imagenfonfo1.jpg");
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.cont1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "tit tit"
+        "def mis"
+        "vis val";
+}
+
+.tit {
+    grid-area: tit;
+    font-family: 'Redressed', cursive;
+    text-align: center;
+}
+
+.obj {
+    @include caja-normal;
+
+    p {
+        font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        font-size: 110%;
+    }
+}
+
+h2 {
+    font-family: 'Handlee', cursive;
+}
+
+.bg {
+    background: white;
+    text-align: center;
+    border-radius: 7%;
+    padding: 10px;
+
+    h2 {
+        padding: 50px;
+    }
+}
+
+.negro {
+    color: black;
+}
+
+form {
+    div {
+        padding: 10px 0 10px 0;
+    }
+}
+
+.object {
+    padding: 5%;
+    margin: 5%;
+    border: 5px;
+    background: $transblack;
+    border-radius: 10%;
+    border: solid 2px white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: solid 5px skyblue;
+    color: white;
+}

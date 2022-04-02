@@ -1,0 +1,113 @@
+@media screen and (max-width: 768px) {
+    .footerPr {
+        flex-direction: column;
+
+        div {
+            width: auto;
+            padding: 5%;
+        }
+    }
+
+    nav {
+        img {
+            width: auto;
+        }
+    }
+
+    .cont1 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .contcas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "ima1 ima2"
+            "ima3 ima4"
+            "ima5 ima6"
+            "ima7 ima8"
+            "ima9 ima10"
+            "ima11 ima12";
+        gap: 10px;
+    }
+
+    .contcass {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "imas1 imas2"
+            "imas3 imas4"
+            "imas5 imas6"
+            "imas7 imas8"
+            "imas9 imas10"
+            "imas11 imas12";
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav {
+        img {
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    nav {
+        img {
+            width: 150px;
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .contcas {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "ima1"
+            "ima2"
+            "ima3"
+            "ima4"
+            "ima5"
+            "ima6"
+            "ima7"
+            "ima8"
+            "ima9"
+            "ima10"
+            "ima11"
+            "ima12";
+    }
+
+    .contcass {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "imas1"
+            "imas2"
+            "imas3"
+            "imas4"
+            "imas5"
+            "imas6"
+            "imas7"
+            "imas8"
+            "imas9"
+            "imas10"
+            "imas11"
+            "imas12";
+    }
+
+    .contseds {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "texti1"
+            "mapi1"
+            "texti2"
+            "mapi2";
+    }
+}

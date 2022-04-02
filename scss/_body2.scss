@@ -1,0 +1,40 @@
+.body2 {
+    background-image: url("../imagenes/imagenfondo2.jpg");
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.contcas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "ima1 ima2 ima3"
+        "ima4 ima5 ima6"
+        "ima7 ima8 ima9"
+        "ima10 ima11 ima12";
+    gap: 10px;
+}
+
+.hijo {
+    background: $fondotransp;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 7%;
+    border: solid 5px skyblue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    img {
+        border-radius: 6%;
+    }
+
+    &:hover {
+        transform: scale(1.1, 1.1);
+    }
+}

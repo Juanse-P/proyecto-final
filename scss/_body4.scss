@@ -1,0 +1,43 @@
+.body4 {
+    background-image: url("../imagenes/imagenfondo5.jpg");
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.bdsed {
+    @include caja-normal;
+    text-align: center;
+    color: black;
+}
+
+.contseds {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "texti1 mapi1"
+        "texti2 mapi2";
+}
+
+.sedscon {
+    @extend .obj;
+    align-items: center;
+}
+
+.mapi {
+    width: auto;
+    background: $transblack;
+
+    iframe {
+        display: block;
+        width: 100%;
+        border: none;
+    }
+}
+
+.texti {
+    font-size: 120%;
+}
