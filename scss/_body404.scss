@@ -1,0 +1,44 @@
+.body404 {
+    background: rgb(195, 193, 34);
+    background: linear-gradient(90deg, rgba(195, 193, 34, 1) 30%, rgba(253, 163, 45, 1) 70%);
+    padding: 2rem;
+
+    header {
+        padding-top: 2rem;
+
+        h1 {
+            text-align: center;
+            font-size: 10rem;
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        }
+    }
+
+    div {
+        text-align: center;
+
+        .btn {
+            background: white;
+        }
+
+        p {
+            font-size: 2rem;
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        }
+
+        h3 {
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        }
+
+        button {
+            a {
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+                color: black;
+            }
+        }
+    }
+}

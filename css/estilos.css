@@ -22,7 +22,7 @@ nav {
     font-size: 125%;
     padding: 10px; }
     .ul li:hover {
-      background: rgba(128, 128, 128, 0.512); }
+      background: rgba(128, 128, 128, 0.438); }
     .ul li {
       transition: background 0.6s; }
       .ul li a {
@@ -81,7 +81,7 @@ nav {
     color: #0f6fc9; }
 
 .body1 {
-  background-image: url("../imagenes/imagenfonfo1.jpg");
+  background-image: url("../imagenes/imagen-fondo1.jpg");
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -113,7 +113,7 @@ nav {
   border: solid 5px skyblue; }
   .obj p, .sedscon p {
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
-    font-size: 110%; }
+    font-size: 111%; }
 
 h2 {
   font-family: 'Handlee', cursive; }
@@ -147,7 +147,7 @@ form div {
   color: white; }
 
 .body2 {
-  background-image: url("../imagenes/imagenfondo2.jpg");
+  background-image: url("../imagenes/imagen-fondo2.jpg");
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -174,10 +174,13 @@ form div {
   .hijo img, .hijob img {
     border-radius: 6%; }
   .hijo:hover, .hijob:hover {
+    background: white;
     transform: scale(1.1, 1.1); }
+  .hijo, .hijob {
+    transition: transform 1s; }
 
 .body3 {
-  background-image: url("../imagenes/imagenfondo3.jpg");
+  background-image: url("../imagenes/imagen-fondo3.jpg");
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -193,6 +196,8 @@ form div {
 .hijob {
   background: #000000c0;
   color: white; }
+  .hijob:hover {
+    background: black; }
 
 .btn {
   background: #7c4415; }
@@ -202,7 +207,7 @@ form div {
   color: white; }
 
 .body4 {
-  background-image: url("../imagenes/imagenfondo5.jpg");
+  background-image: url("../imagenes/imagen-fondo5.jpg");
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -244,6 +249,32 @@ form div {
 .texti {
   font-size: 120%; }
 
+.body404 {
+  background: #c3c122;
+  background: linear-gradient(90deg, #c3c122 30%, #fda32d 70%);
+  padding: 2rem; }
+  .body404 header {
+    padding-top: 2rem; }
+    .body404 header h1 {
+      text-align: center;
+      font-size: 10rem;
+      font-family: 'Zen Kaku Gothic Antique', sans-serif; }
+    .body404 header h2 {
+      text-align: center;
+      font-family: 'Zen Kaku Gothic Antique', sans-serif; }
+  .body404 div {
+    text-align: center; }
+    .body404 div .btn {
+      background: white; }
+    .body404 div p {
+      font-size: 2rem;
+      font-family: 'Zen Kaku Gothic Antique', sans-serif; }
+    .body404 div h3 {
+      font-family: 'Zen Kaku Gothic Antique', sans-serif; }
+    .body404 div button a {
+      font-family: 'Zen Kaku Gothic Antique', sans-serif;
+      color: black; }
+
 @media screen and (max-width: 768px) {
   .footerPr {
     flex-direction: column; }
@@ -271,6 +302,15 @@ form div {
   nav img {
     width: 200px; } }
 
+@media screen and (max-width: 366px) {
+  nav img {
+    width: 175px;
+    padding: 0; }
+  .body404 {
+    padding: 0; }
+  .image {
+    width: 100px; } }
+
 @media screen and (max-width: 350px) {
   nav img {
     width: 150px; } }
@@ -288,4 +328,30 @@ form div {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "texti1" "mapi1" "texti2" "mapi2"; } }
+    grid-template-areas: "texti1" "mapi1" "texti2" "mapi2"; }
+  .body404 {
+    background: #c3c122;
+    background: linear-gradient(90deg, #c3c122 30%, #fda32d 70%);
+    padding: 2rem; }
+    .body404 header {
+      padding-top: 2rem; }
+      .body404 header h1 {
+        text-align: center;
+        font-size: 4rem;
+        font-family: 'Zen Kaku Gothic Antique', sans-serif; }
+    .body404 div img {
+      width: 400px; } }
+
+@media screen and (max-width: 450px) {
+  .body404 {
+    background: #c3c122;
+    background: linear-gradient(90deg, #c3c122 30%, #fda32d 70%);
+    padding: 0; }
+    .body404 header {
+      padding-top: 2rem; }
+      .body404 header h1 {
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'Zen Kaku Gothic Antique', sans-serif; }
+    .body404 div img {
+      width: 290px; } }

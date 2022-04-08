@@ -55,6 +55,23 @@
     }
 }
 
+@media screen and (max-width: 366px) {
+    nav {
+        img {
+            width: 175px;
+            padding: 0;
+        }
+    }
+
+    .body404 {
+        padding: 0;
+    }
+
+    .image {
+        width: 100px;
+    }
+}
+
 @media screen and (max-width: 350px) {
     nav {
         img {
@@ -109,5 +126,51 @@
             "mapi1"
             "texti2"
             "mapi2";
+    }
+
+    .body404 {
+        background: rgb(195, 193, 34);
+        background: linear-gradient(90deg, rgba(195, 193, 34, 1) 30%, rgba(253, 163, 45, 1) 70%);
+        padding: 2rem;
+
+        header {
+            padding-top: 2rem;
+
+            h1 {
+                text-align: center;
+                font-size: 4rem;
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            }
+        }
+
+        div {
+            img {
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .body404 {
+        background: rgb(195, 193, 34);
+        background: linear-gradient(90deg, rgba(195, 193, 34, 1) 30%, rgba(253, 163, 45, 1) 70%);
+        padding: 0;
+
+        header {
+            padding-top: 2rem;
+
+            h1 {
+                text-align: center;
+                font-size: 3rem;
+                font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            }
+        }
+
+        div {
+            img {
+                width: 290px;
+            }
+        }
     }
 }

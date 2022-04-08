@@ -1,5 +1,5 @@
 .body3 {
-    background-image: url("../imagenes/imagenfondo3.jpg");
+    background-image: url("../imagenes/imagen-fondo3.jpg");
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -22,6 +22,10 @@
     @extend .hijo;
     background: $transblack;
     color: white;
+
+    &:hover {
+        background: black;
+    }
 }
 
 .btn {
